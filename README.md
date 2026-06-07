@@ -17,6 +17,14 @@ rest.html   → Main webpage
 rest.css     → Styling (design) of the website
 rest.js      → JavaScript (button action)
 
+Project Structure
+Fast-Food-Fusion/ 
+│ 
+├── index.html 
+├── rest.css 
+├── rest.js 
+└── README.md
+
 Technologies used
 
 HTML → Structure of website
