@@ -1,50 +1,57 @@
-Fast Food Fusion
+# 🍔 Fast Food Fusion
 
-Fast Food Fusion is a simple website for a fast food restaurant.
-It is made using HTML, CSS, and JavaScript. The website shows food items, prices, and restaurant details in a clean and attractive way.
+**Fast Food Fusion** is a clean, modern, and responsive website for a fast-food restaurant built using **HTML5**, **CSS3**, and **JavaScript**. The website displays food categories, menu items with prices, restaurant details, customer reviews, table booking form, and interactive features like an "Order Now" order placement alert.
 
-What this website has
-A home page with welcome message and button
-A menu section with food items like Pizza, Burger, Pasta, Fries, and Chow Mein
-About section that tells about the restaurant
-Contact section with email and phone number
-“Order Now” button that shows a message when clicked
-Fully responsive design (works on mobile and desktop)
+---
 
-Files in this project
+## ✨ Features
 
-rest.html   → Main webpage
-rest.css     → Styling (design) of the website
-rest.js      → JavaScript (button action)
+* **Hero Section:** Eye-catching home section with a welcome banner and call-to-action button.
+* **About Us Section:** Short description detailing the restaurant’s story and food quality.
+* **Food Categories:** Quick visual representation of available categories (Pizzas, Burgers, Pasta, Snacks, Drinks).
+* **Special Menu:** Food cards displaying item images, titles, pricing, quantity selectors, and ordering buttons.
+* **Interactive Order System:** Displays a success message popup/alert when clicking the **Order Now** button.
+* **Table Reservation & Contact Form:** Forms for booking tables and sending direct customer inquiries.
+* **Back to Top Button:** Smooth scrolling back to the top of the page.
+* **Fully Responsive:** Optimized for desktop, tablet, and mobile screen sizes.
 
-Project Structure
-Fast-Food-Fusion/ 
-│ 
-├── index.html 
-├── rest.css 
-├── rest.js 
+---
+
+## 📁 Project Structure
+
+```text
+Fast-Food-Fusion/
+│
+├── rest.html          
+├── rest.css           
+├── rest.js            
 └── README.md
+         
+🛠️ Technologies Used
+HTML5: Semantic markup and layout structure.
 
-Technologies used
+CSS3: Flexbox, Grid, CSS Variables, and animations for styling and responsive design.
 
-HTML → Structure of website
-CSS → Design and layout
-JavaScript → Button interaction
+JavaScript (ES6): DOM manipulation, modal toggling, scroll events, and button interactions.
 
-How to run
+Font Awesome: Icons for social media, categories, and navigation UI.
 
-Download the project
-Open the folder
-Click on rest.html
-Website will open in browser
+🚀 How to Run the Project
+Download or Clone this repository to your local machine:
 
-Future ideas
+Bash
+git clone [https://github.com/Kumari-Sakshi12/Restaurant.git](https://github.com/your-username/Fast-Food-Fusion.git)
+Navigate into the project directory:
 
-Add online ordering system
-Add shopping cart
-Add login system
-Add payment option
+Base
+cd Restaurant
+Open 'rest.html' in any modern web browser (Chrome, Firefox, Edge, Safari).
 
-License
+🔮 Future Enhancements
+ Full E-commerce Shopping Cart integration
+ User Authentication (Login / Signup)
+ Online Payment Gateway integration
+ Backend integration for database management (Node.js / MongoDB)
 
-This project is free to use.
+📄 License
+This project is free to use and open-source for learning and personal demonstration purposes.
