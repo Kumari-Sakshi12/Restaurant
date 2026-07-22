@@ -1,6 +1,4 @@
-/* ==========================================
-   1. GLOBAL VARIABLES & RESET
-   ========================================== */
+
 :root {
     --primary-color: #ff4757;
     --primary-hover: #e03947;
@@ -42,7 +40,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Common Section Styling */
+
 section {
     padding: 80px 7%;
 }
@@ -73,9 +71,6 @@ section {
     transform: translateY(-2px);
 }
 
-/* ==========================================
-   2. LOADER ANIMATION
-   ========================================== */
 #loader {
     position: fixed;
     top: 0;
@@ -103,9 +98,6 @@ section {
     100% { transform: rotate(360deg); }
 }
 
-/* ==========================================
-   3. NAVIGATION BAR
-   ========================================== */
 .navbar {
     position: fixed;
     top: 0;
@@ -182,7 +174,6 @@ section {
     display: none;
 }
 
-/* Search Dropdown */
 .search-form {
     position: absolute;
     top: 110%;
@@ -210,7 +201,7 @@ section {
 }
 
 /* ==========================================
-   4. SHOPPING CART SIDEBAR
+    SHOPPING CART SIDEBAR
    ========================================== */
 .cart-sidebar {
     position: fixed;
@@ -275,9 +266,6 @@ section {
     text-align: center;
 }
 
-/* ==========================================
-   5. HERO SECTION
-   ========================================== */
 .hero {
     min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
@@ -308,7 +296,7 @@ section {
 }
 
 /* ==========================================
-   6. FOOD CATEGORIES
+   FOOD CATEGORIES
    ========================================== */
 .category-container {
     display: grid;
@@ -342,7 +330,7 @@ section {
 }
 
 /* ==========================================
-   7. MENU CARDS (FEATURED FOODS)
+    MENU CARDS (FEATURED FOODS)
    ========================================== */
 .menu-container {
     display: grid;
@@ -426,8 +414,6 @@ section {
 .add-to-cart {
     width: 50%;
 }
-
-/* Buy Now Button Color Differentiation */
 .buy-now {
     background: #2ed573; /* Green Color for Instant Checkout */
     color: #fff;
@@ -437,9 +423,7 @@ section {
     background: #26af5f;
     transform: translateY(-2px);
 }
-/* ==========================================
-   ABOUT US SECTION
-   ========================================== */
+
 #about {
     background: var(--card-bg);
     border-radius: 20px;
@@ -457,8 +441,6 @@ section {
     position: relative;
     display: inline-block;
 }
-
-/* Red Accent underline below Heading */
 #about h2::after {
     content: '';
     display: block;
@@ -493,9 +475,6 @@ section {
     }
 }
 
-/* ==========================================
-   8. SPECIAL OFFERS & WHY US
-   ========================================== */
 .offer-banner {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
                 url('https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1200') no-repeat center center/cover;
@@ -540,9 +519,6 @@ section {
     margin-top: 10px;
 }
 
-/* ==========================================
-   9. REVIEWS & GALLERY
-   ========================================== */
 .reviews-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -585,9 +561,6 @@ section {
     transform: scale(1.03);
 }
 
-/* ==========================================
-   10. RESERVATION & CONTACT
-   ========================================== */
 .reservation-form {
     max-width: 600px;
     margin: 0 auto;
@@ -646,9 +619,6 @@ section {
     min-height: 350px;
 }
 
-/* ==========================================
-   11. NEWSLETTER & FOOTER
-   ========================================== */
 .newsletter {
     background: var(--card-bg);
     text-align: center;
@@ -733,9 +703,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ==========================================
-   12. BACK TO TOP BUTTON
-   ========================================== */
 .back-to-top {
     position: fixed;
     bottom: 30px;
@@ -759,7 +726,7 @@ footer {
 }
 
 /* ==========================================
-   13. MEDIA QUERIES (RESPONSIVE DESIGN)
+    MEDIA QUERIES (RESPONSIVE DESIGN)
    ========================================== */
 @media (max-width: 991px) {
     section {
