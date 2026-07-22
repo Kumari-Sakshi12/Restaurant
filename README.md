@@ -40,7 +40,7 @@ Font Awesome: Icons for social media, categories, and navigation UI.
 Download or Clone this repository to your local machine:
 
 Bash
-git clone [https://github.com/Kumari-Sakshi12/Restaurant.git](https://github.com/your-username/Fast-Food-Fusion.git)
+git clone (https://github.com/Kumari-Sakshi12/Restaurant.git)
 Navigate into the project directory:
 
 Base
