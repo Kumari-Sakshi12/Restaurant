@@ -424,6 +424,15 @@ section {
     transform: translateY(-2px);
 }
 
+.card-buttons{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+.card-buttons .btn{
+    flex: 1;
+}
+
 #about {
     background: var(--card-bg);
     border-radius: 20px;
@@ -739,6 +748,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
     #menu-btn {
         display: block;
     }
@@ -766,7 +778,10 @@ footer {
     }
 
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+    .hero-content p{
+        font-size: 1rem;
     }
 
     .reservation-form {

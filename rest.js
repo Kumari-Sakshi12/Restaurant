@@ -128,23 +128,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Order Now Button Functionality
-    const orderNowBtns = card.querySelectorAll('.order-now');
-    orderNowBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        const card = e.target.closest('.card');
-        const title = card.querySelector('h3').innerText;
-        const priceText = card.querySelector('.price').innerText;
-        const price = parseFloat(priceText.replace('₹', ''));
-        const imgSrc = card.querySelector('img').src;
-        const qtyInput = card.querySelector('.qty-input');
-        const quantity = parseInt(qtyInput.value);
-
-        // Cart me item add karega aur seedha Cart Sidebar open karke Checkout alert dega
-        addToCart(title, price, imgSrc, quantity);
-        alert(`Proceeding to checkout for ${quantity} x ${title}!`);
-    });
-});
 
     // Add Item to Cart Array
     function addToCart(title, price, imgSrc, quantity) {
@@ -170,8 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cartItemsContainer.innerHTML = '<p class="empty-cart-msg">Your cart is empty!</p>';
             if (cartTotalPrice) cartTotalPrice.innerText = '₹0';
             if (cartCountBadge) cartCountBadge.innerText = '0';
-            return;
-        }
+            return;        }
 
         let total = 0;
         let totalItemsCount = 0;
@@ -237,30 +219,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* ==========================================
-       6. BACK TO TOP BUTTON
-       ========================================== */
-    const backToTopBtn = document.getElementById('backToTop');
-
-    window.addEventListener('scroll', () => {
-        if (backToTopBtn) {
-            if (window.scrollY > 300) {
-                backToTopBtn.classList.add('active');
-            } else {
-                backToTopBtn.classList.remove('active');
-            }
-        }
-    });
-
-    if (backToTopBtn) {
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    }
-
-    /* ==========================================
        7. FORM SUBMISSIONS PREVENT DEFAULT
        ========================================== */
     const forms = document.querySelectorAll('form');
@@ -284,12 +242,10 @@ if (searchBox) {
         const searchValue = searchBox.value.toLowerCase().trim();
 
         menuCards.forEach(card => {
-            // Card ke andar ka title (e.g., Cheesy Margherita Pizza)
             const title = card.querySelector('h3').innerText.toLowerCase();
 
-            // Agar typed text card title mein matching hai toh show karega, nahi toh hide
             if (title.includes(searchValue)) {
-                card.style.display = 'flex'; // ya 'block'
+                card.style.display = " ";
             } else {
                 card.style.display = 'none';
             }
@@ -321,7 +277,6 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
     const backToTopBtn = document.getElementById("backToTop");
 
-    // Jab user 300px niche scroll kare, tab button dikhao
     window.addEventListener("scroll", function () {
         if (window.scrollY > 300) {
             backToTopBtn.classList.add("active");
@@ -330,7 +285,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Button click karne par smoothly top par scroll karein
     backToTopBtn.addEventListener("click", function () {
         window.scrollTo({
             top: 0,
